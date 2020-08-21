@@ -1,0 +1,40 @@
+body{
+    background-color: #222;
+    color: #fcfcfc;
+    position: relative;
+    padding-bottom: 80px;
+    min-height: 100vh;
+    text-align: center;
+    
+}
+
+nav{
+    padding: 20px;
+    color: white;
+}
+
+.gif-box{
+    margin: 0.5rem;
+    display: inline-block;
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+
+}
+
+img{
+    height: 350px;
+    width: 350px;
+    display: block;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #333333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
