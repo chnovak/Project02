@@ -1,5 +1,8 @@
 $( document ).ready(function() {
 function getData() {
+    $('button').click(function() {
+        $('.inner').empty();
+    });
     var input = $('#searchtext').val();
     var xhr = $.get('http://api.giphy.com/v1/gifs/search?q=' + input + '+&api_key=KGu4zQMiVhxF5VLjrBolQiJzyLardbaM&limit=30');
     xhr.done(function (response) {
