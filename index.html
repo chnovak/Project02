@@ -3,42 +3,39 @@
   <head>
     <title>Project 02</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-      
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../scripts/main.js"></script>
+        
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Project 2 | GIPHY Search</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
-          </ul>
-        </div>
+      <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <div class="container">
-      <input id="search" type="search" placeholder="Search.."/>
-      <button id="submit" type="button" class="btn btn-sm btn-success" oneclick="getData()">Submit</button>
+    
+    <input id="searchtext" type="text" placeholder="Search...">
+    <button id="searchgifs" type="submit" onClick="getData()">Submit</button>
+    <div class="inner"></div>
 <br>
 <br>
-<div class="row">
-  <div class="col-sm-4 col-md-4 col-lg-4"></div>
-  <div class="inner"></div>
-</div>
-    </div>
-  </div>
-  <footer>
-   <p>Copyright &copy;
-    <script>document.write(new Date().getFullYear());</script>Powered by Giphy</p>
-  </footer>
+
+  
+  
   </body>
     </html>

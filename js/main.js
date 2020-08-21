@@ -1,13 +1,15 @@
+$( document ).ready(function() {
 function getData() {
-    $(".inner").empty();
-    var input = $('#search').val();
-    $.get('http://api.giphy.com/v1/gifs/search?q='+ input +'+&api_key=KGu4zQMiVhxF5VLjrBolQiJzyLardbaM&limit=30', function (response) {
+    var input = $('#searchtext').val();
+    var xhr = $.get('http://api.giphy.com/v1/gifs/search?q=' + input + '+&api_key=KGu4zQMiVhxF5VLjrBolQiJzyLardbaM&limit=30');
+    xhr.done(function (response) {
+        console.log("success got data, response");
+        var jiffs = response.data;
 
-        for (i = 0; response.data.length; i++) {
-       $('.inner').append("<img src=" + response.data[i].images.original.url +">")
-    }    
+        for (i in jiffs) {
+            $('.inner').append("<img src='" + jiffs[i].images.original.url + "' style='height:350px; width:350px;'/>");
+        }
 
-})
-$div.addClass("gif-box");
-
+    });
 }
+});
