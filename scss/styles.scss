@@ -1,4 +1,4 @@
-body{
+/*body{
     background-color: #222;
     color: #fcfcfc;
     position: relative;
@@ -6,7 +6,7 @@ body{
     min-height: 100vh;
     text-align: center;
     
-}
+}*/
 
 nav{
     padding: 20px;
@@ -38,22 +38,8 @@ footer{
     left: 0;
     width: 100%;
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
-  }
-  
-  .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+
+
+.jumbotron{
     text-align: center;
-    padding: 40px 0;
-    font-size: 30px;
-  }
-  
-  .item1 {
-    grid-area: 2 / 1 / span 2 / span 3;
-  }
-  
+}

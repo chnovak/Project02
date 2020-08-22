@@ -1,74 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Project 02</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="../scripts/main.js"></script>
-        
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-        <ul class="navbar-nav">
+
+<head>
+  <title>Project 02</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../scripts/main.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="#">Project 2 |GIPHY Search</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Project 2 | GIPHY Search</a>
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Action 1</a>
+              <a class="dropdown-item" href="#">Action 2</a>
+            </div>
           </li>
         </ul>
-      </nav>
-    </header>
-    
-    <input id="searchtext" type="text" placeholder="Search...">
-    <button id="searchgifs" type="submit" onClick="getData()">Submit</button>
-    <div class="inner"></div>
-    <div class="grid-container">
-      <div class="item1"></div>
-      <div class="item2"></div>
-      <div class="item3"></div>  
-      <div class="item4"></div>
-      <div class="item5"></div>
-      <div class="item6"></div>
-      <div class="item7"></div>
-    </div>
-    <script>
-      function getData() {
-    $("button").click(function() {
-        $(".inner").empty();
-    });
-    var input = $("#searchtext").val()
-    var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + input + "+&api_key=KGu4zQMiVhxF5VLjrBolQiJzyLardbaM&limit=30"); {
-        xhr.done(function(response) {
+      </div>
+    </nav>
+  </header>
 
-            console.log("success got data", response);
 
-            var jiffs = response.data
+   <div class="jumbotron">
+    <div class="container">
+      <input id="searchtext" type="text" placeholder="Search...">
+      <button id="searchgifs" type="submit" onClick="getData()">Submit</button>
+      <div class="inner"></div>
+      <div class="grid-container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6"></div>
+        <div class="item7"></div>
+      </div>
+      <script>
+        function getData() {
+          $("button").click(function () {
+            $(".inner").empty();
+          });
+          var input = $("#searchtext").val()
+          var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + input + "+&api_key=KGu4zQMiVhxF5VLjrBolQiJzyLardbaM&limit=30"); {
+      
+            xhr.done(function (response) {
 
-            for (i in jiffs) {
+              console.log("success got data", response);
+
+              var jiffs = response.data
+
+              for (i in jiffs) {
                 $('.inner').append("<img src='" + jiffs[i].images.original.url + "' style='height:350px; width:350px;' />")
-            }
-        });
-    }
-}
-    </script>
-    <div class="flex-container" >
-      <div></div>
-     
-    </div>
-<br>
-<br>
+              }
+            });
+          }
+        }
+      </script>
+   </div>
 
-  
-  
-  </body>
-    </html>
+
+    
+
+
+</body>
+
+</html>
