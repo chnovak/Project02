@@ -7,10 +7,14 @@
     text-align: center;
     
 }*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+body > h1{
+    font-family: Alegreya, serif;
+}
 
-nav{
-    padding: 20px;
-    color: white;
+.jumbotron{
+    text-align: center;
+    
 }
 
 .gif-box{
@@ -27,6 +31,11 @@ img{
     width: 350px;
     display: block;
 }
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
 
 footer{
     text-align: center;
@@ -40,6 +49,3 @@ footer{
 }
 
 
-.jumbotron{
-    text-align: center;
-}

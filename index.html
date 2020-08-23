@@ -21,30 +21,20 @@
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a class="dropdown-item" href="#">Action 1</a>
-              <a class="dropdown-item" href="#">Action 2</a>
-            </div>
-          </li>
         </ul>
       </div>
     </nav>
   </header>
 
-
-   <div class="jumbotron">
+ 
+  <div class="jumbotron">
     <div class="container">
       <input id="searchtext" type="text" placeholder="Search...">
       <button id="searchgifs" type="submit" onClick="getData()">Submit</button>
+       <div class="flex-container">
+      </div>
+    </div>
+  </div>
       <div class="inner"></div>
       <div class="grid-container">
         <div class="item1"></div>
@@ -55,14 +45,14 @@
         <div class="item6"></div>
         <div class="item7"></div>
       </div>
-      <script>
+         <script>
         function getData() {
           $("button").click(function () {
             $(".inner").empty();
           });
           var input = $("#searchtext").val()
           var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + input + "+&api_key=KGu4zQMiVhxF5VLjrBolQiJzyLardbaM&limit=30"); {
-      
+
             xhr.done(function (response) {
 
               console.log("success got data", response);
@@ -76,10 +66,12 @@
           }
         }
       </script>
-   </div>
+    </div>
 
 
-    
+
+
+
 
 
 </body>
