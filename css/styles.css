@@ -12,20 +12,31 @@ body > h1 {
   font-family: Alegreya, serif;
 }
 
-.nav {
+.jumbotron {
+  background-image: url(images/giphy.gif);
   text-align: center;
-  padding: 20px;
-  color: white;
+  border: solid;
+  border-color: blue;
+  background-size: cover;
+  background-color: white;
 }
 
-.gif-box {
-  margin: 0.5rem;
-  display: inline-block;
-  border: 1px solid black;
-  height: auto;
-  width: auto;
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
+/*.gif-box{
+    margin: 0.5rem;
+    display: inline-block;
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+
+}*/
 img {
   height: 350px;
   width: 350px;
@@ -38,14 +49,14 @@ img {
   padding: 10px;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333333;
-  color: #fff;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
+/*footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #333333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}*/
 /*# sourceMappingURL=styles.css.map */
