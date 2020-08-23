@@ -14,17 +14,27 @@ body > h1{
 
 .jumbotron{
     text-align: center;
-    
+    border: solid;
+    border-color: blue;
+    background-size: cover;
+    background-color: white;    
+}
+.flex-container{
+    display: -webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
-.gif-box{
+/*.gif-box{
     margin: 0.5rem;
     display: inline-block;
     border: 1px solid black;
     height: auto;
     width: auto;
 
-}
+}*/
 
 img{
     height: 350px;
@@ -37,7 +47,7 @@ img{
     padding: 10px;
   }
 
-footer{
+/*footer{
     text-align: center;
     padding: 20px;
     background-color: #333333;
@@ -46,6 +56,6 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
-}
+}*/
 
 

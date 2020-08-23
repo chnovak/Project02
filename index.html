@@ -26,47 +26,38 @@
     </nav>
   </header>
 
- 
+
   <div class="jumbotron">
     <div class="container">
       <input id="searchtext" type="text" placeholder="Search...">
       <button id="searchgifs" type="submit" onClick="getData()">Submit</button>
-       <div class="flex-container">
-      </div>
     </div>
   </div>
-      <div class="inner"></div>
-      <div class="grid-container">
-        <div class="item1"></div>
-        <div class="item2"></div>
-        <div class="item3"></div>
-        <div class="item4"></div>
-        <div class="item5"></div>
-        <div class="item6"></div>
-        <div class="item7"></div>
-      </div>
-         <script>
-        function getData() {
-          $("button").click(function () {
-            $(".inner").empty();
-          });
-          var input = $("#searchtext").val()
-          var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + input + "+&api_key=KGu4zQMiVhxF5VLjrBolQiJzyLardbaM&limit=30"); {
+  <div class="inner"></div>
+  <div class="grid-container">
+  </div>
+  <script>
+    function getData() {
+      $("button").click(function () {
+        $(".inner").empty();
+      });
+      var input = $("#searchtext").val()
+      var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + input + "+&api_key=KGu4zQMiVhxF5VLjrBolQiJzyLardbaM&limit=30"); {
 
-            xhr.done(function (response) {
+        xhr.done(function (response) {
 
-              console.log("success got data", response);
+          console.log("success got data", response);
 
-              var jiffs = response.data
+          var jiffs = response.data
 
-              for (i in jiffs) {
-                $('.inner').append("<img src='" + jiffs[i].images.original.url + "' style='height:350px; width:350px;' />")
-              }
-            });
+          for (i in jiffs) {
+            $('.inner').append("<img src='" + jiffs[i].images.original.url + "' style='height:350px; width:350px;' />")
           }
-        }
-      </script>
-    </div>
+        });
+      }
+    }
+  </script>
+  </div>
 
 
 
