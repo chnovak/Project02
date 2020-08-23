@@ -1,4 +1,4 @@
-/*function getData() {
+function getData() {
     $("button").click(function() {
         $(".inner").empty();
     });
@@ -15,4 +15,4 @@
             }
         });
     }
-}*/
+}

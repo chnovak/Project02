@@ -1,42 +1,15 @@
-/*body{
-    background-color: #222;
-    color: #fcfcfc;
-    position: relative;
-    padding-bottom: 80px;
-    min-height: 100vh;
-    text-align: center;
-    
-}*/
-@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
-body > h1 {
+.nav {
   font-family: Alegreya, serif;
+  text-align: center;
 }
 
 .jumbotron {
   background-image: url(images/giphy.gif);
   text-align: center;
-  border: solid;
-  border-color: blue;
   background-size: cover;
   background-color: white;
 }
 
-.flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-/*.gif-box{
-    margin: 0.5rem;
-    display: inline-block;
-    border: 1px solid black;
-    height: auto;
-    width: auto;
-
-}*/
 img {
   height: 350px;
   width: 350px;
