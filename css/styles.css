@@ -1,13 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
 .nav {
-  font-family: Alegreya, serif;
+  padding: 30px;
   text-align: center;
+  color: white;
 }
 
-.jumbotron {
-  background-image: url(images/giphy.gif);
-  text-align: center;
-  background-size: cover;
-  background-color: white;
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.flex-child {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 20px;
 }
 
 img {

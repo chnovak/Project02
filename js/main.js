@@ -11,7 +11,7 @@ function getData() {
             var jiffs = response.data
 
             for (i in jiffs) {
-                $('.inner').append("<img src='" + jiffs[i].images.original.url + "' style='height:350px; width:350px;' />")
+                $('.inner').append("<div class='flex-child'><img src='" + jiffs[i].images.original.url + "' style='height:350px; width:350px;' />")
             }
         });
     }
