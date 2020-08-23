@@ -3,11 +3,11 @@
 <head>
   <title>Project 02</title>
   <meta charset="UTF-8 width-device-width, initial-scale-1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
 
 </head>
 
@@ -26,23 +26,18 @@
     </nav>
   </header>
 
-  
 
+  <div class="jumbotron"
+    style="background-image: url(images/giphy.gif); background-size: 55%; background-repeat: no-repeat">
     <input id="searchtext" type="text" placeholder="Search...">
     <button id="searchgifs" type="submit" onClick="getData()">Submit</button>
-    <div class="container">
+  </div>
+  <div class="flex-container">
     <div class="inner"></div>
   </div>
   </div>
   </div>
 
-
-
-
-
-  
-    
- 
 
 
 
