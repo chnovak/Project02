@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
-h2 {
-  font-size: serif;
+.img-box {
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.img-body {
+  margin: 5px;
+}
+
+footer {
+  text-align: center;
 }
 
 /*ul {
