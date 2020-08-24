@@ -1,14 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 
 
+h2 {
+  font-size: serif;
 
-.nav{
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*ul {
+  columns: 200px;
+  break-inside: avoid;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+}
+li {
+  list-style-type:none;
+}*/
+
+
+/*.nav{
     padding: 30px;
     text-align: center;
     color: white;
-}
+}*/
 
-.flex-container {
+/*.flex-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -26,19 +47,19 @@
 .container{
     display: inline-block;
     justify-content: center;
-}
+}*/
 
 
-img{
+/*img{
     height: 350px;
     width: 350px;
     display: block;
-}
-.center {
+}*/
+/*.center {
     margin: auto;
     width: 60%;
     padding: 10px;
-  }
+  }*/
 
 /*footer{
     text-align: center;
@@ -50,43 +71,10 @@ img{
     left: 0;
     width: 100%;
 }*/
-* {
-    box-sizing: border-box;
-  }
-  html {
-    font-family: Georgia, serif;
-    font-size: 18px;
-  }
-  body {
-    margin-bottom: 3rem;
-  }
-  h1 {
-    font-size: 2rem;
-    color: #fff;
-    margin: 0;
-    padding: 0.75em 0.25em;
-    background: #2c2c2c;
-    line-height: 1.1em;
-  }
-  ul {
-    columns: 200px;
-    break-inside: avoid;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 0;
-  }
-  li {
-    list-style-type:none;
-  }
-  img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    border: 1px solid black;
-    box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
-  }
+
+  
+  
+ 
 
    /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
