@@ -1,72 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
 
-
-
-.img-box {
-  height: 150px;
-  width: 150px;
-  border: 1px solid black;
+header {
+  background: #69e1ff;
+  padding: 2rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.img-body{
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+nav ul li {
+  margin: 0;
+  margin-left: 1rem;
+  background: #ffdc69;
+  padding: .6rem 1rem;
+}
+.img-box { height: 150px;
+  Width: 150px;
+  Border: 1px solid black;
+}
+
+.img-body {
   margin: 5px;
 }
+
 footer {
   text-align: center;
 }
-/*ul {
-  columns: 200px;
-  break-inside: avoid;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 0;
-}
-li {
-  list-style-type:none;
-}*/
-/*.nav{
-    padding: 30px;
-    text-align: center;
-    color: white;
-}*/
-/*.flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; 
-      }
 
-.flex-child{
-      margin: 20px 20px;
-}
-
-.container{
-    display: inline-block;
-    justify-content: center;
-}*/
-/*img{
-    height: 350px;
-    width: 350px;
-    display: block;
-}*/
-/*.center {
-    margin: auto;
-    width: 60%;
-    padding: 10px;
-  }*/
-/*footer{
-    text-align: center;
-    padding: 20px;
-    background-color: #333333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+@media (min-width: 320px) {
+  header {
+    float: none;
     width: 100%;
-}*/
+  }
+
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
