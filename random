@@ -34,31 +34,47 @@
 </html>
 
 
-function getData() {
-    $("button").click(function() {
-        $(".inner").empty();
+$(function() {
+
+    
+    var $input = $('#input');
+    var $submit = $('#submit');
+    var apiKey = 'KGu4zQMiVhxF5VLjrBolQiJzyLardbaM';
+    var $imgBody = $('.img-body');
+    
+    $submit.on('click', function(event) {
+        event.preventDefault();
+        $imgBody.empty();
+        var inputVal = $input.val();
+        getGiphys(inputVal);
+        
+        $inputVal.val(' ');
     });
-    var input = $("#searchtext").val()
-    var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + input + "+&api_key=KGu4zQMiVhxF5VLjrBolQiJzyLardbaM&limit=30"); {
-        xhr.done(function(response) {
 
-            console.log("success got data", response);
+    function getGiphys(inputVal) {
+        $.get('http://api.giphy.com/v1/gifs/search?q=' + inputVal + '&api_key=' +
+                apiKey + '&limit=20')
+            .done(function(data) {
+                for (var i = 0; i < 20; i++) {
+                    var gifImg = data.data[i].images.original.url;
+                    createBox(gifImg);
+                }
+            });
+    };
 
-            var jiffs = response.data
+    function createBox(gifImg) {
+        var $newImg = $('<img>');
+        $newImg.attr('src', gifImg);
+        $newImg.addClass('img-box');
 
-            for (i in jiffs) {
-                $('.inner').append("<img src='" + jiffs[i].images.original.url + "' style='height:350px; width:350px;' />")
-            }
-        });
+        $imgBody.append($newImg);
+
     }
-}
 
 
-$('.inner').append("<div class='flex-child><img src='" + response.data[i].images.original.url + "'></div>")
-            
-            }
 
 
+});
 
      /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

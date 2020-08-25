@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
-header {
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/*header {
   background: #69e1ff;
   padding: 2rem;
   margin: 0;
@@ -21,13 +21,9 @@ nav ul {
   display: flex;
   list-style: none;
   margin: 0;
-}
-
-nav ul li {
-  margin: 0;
-  margin-left: 1rem;
-  background: #ffdc69;
-  padding: .6rem 1rem;
+}*/
+.navbar {
+  font-family: "Anton";
 }
 
 .img-box {
@@ -40,20 +36,30 @@ nav ul li {
   margin: 5px;
 }
 
-footer {
+.jumbotron {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-inline {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form {
+  -ms-flex-line-pack: center;
+      align-content: center;
   text-align: center;
 }
 
-@media only screen and (max-width: 320px) {
-  body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /* Extra small devices (phones, 600px and down) */
